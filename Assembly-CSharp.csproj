@@ -57,10 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Movment.cs" />
+    <Compile Include="Assets\Scripts\SceneChanger.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\assets\UI\Hearts\PNG\health_bar\info.txt" />
-    <None Include="Assets\assets\western-fps-2d\README.txt" />
+    <None Include="Assets\Readme.txt" />
+    <None Include="Assets\UI\Hearts\PNG\health_bar\info.txt" />
+    <None Include="Assets\western-fps-2d\README.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
