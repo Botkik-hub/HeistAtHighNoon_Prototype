@@ -14,9 +14,12 @@ public class Movment : MonoBehaviour
 
     private bool doDoge = false;
 
+    public Animator animator;
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -26,6 +29,18 @@ public class Movment : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             doDoge = true;
+        }
+        if (horizontal != 0)
+        {
+            animator.SetFloat("SquareMagnitude", 1);
+        } 
+        else if (vertical != 0)
+        {
+            animator.SetFloat("SquareMagnitude", 1);
+        }
+        else
+        {
+            animator.SetFloat("SquareMagnitude", 0);
         }
     }
 
